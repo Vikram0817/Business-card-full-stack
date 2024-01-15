@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+}
+
+.name {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.socialLinks {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #007BFF;
+  display: inline-block;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.interestsHeader {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.interestsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.interestItem {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust the height based on your needs */
+}
+
+.signup,
+.login,
+.add-btn,
+.details-btn {
+  width: 20%;
+  height: 6%;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007BFF; /* Green color, you can adjust */
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+}
+
+.signup:hover,
+.login:hover {
+  background-color: #0056b3; 
+}
+
+.signup-container, .login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust the height based on your needs */
+}
+
+.input-field {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.details-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.details-label {
+  font-weight: bold;
+}
+
+.add-btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-btn:hover,
+.details-btn:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.interestItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 150px;
+}
+
+.details-btn {
+  display: block; /* Ensure it's a block-level element for auto margin to work */
+  margin: auto;
+  width: 30%;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .details-container {
+    width: 90%;
+  }
+}
